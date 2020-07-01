@@ -1,0 +1,42 @@
+@import './assets/bootstrap/css/bootstrap.min.css';
+
+section {
+  padding:20px;
+}
+
+.header,.tools,.contact {
+  background-repeat: no-repeat;
+  background-position: center top;
+  color:#ddd;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;  
+  padding:auto;
+}
+
+.header {
+  background-image: url('./assets/images/bg5.jpg');
+}
+
+.tools {
+  background-image: url('./assets/images/bg4.jpg');
+}
+
+.contact {
+  background-image: url('./assets/images/bg6.jpg');
+  height:90vh;
+}
+
+.resume, .portfolio {
+  color:#ddd;
+  height: 100vh;
+  background-color:#000;
+  padding:auto;
+}
+
+footer {
+  height: 40px;
+  color:#ddd;
+  background-color:#000;
+  padding:auto;
+}
