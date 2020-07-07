@@ -4,6 +4,17 @@
   color:#eee;
 }
 
+.tools-box {
+  background-color:#fff5;
+}
+
+.resume-photo {
+  border:2px;
+  border-color:#aaa;
+  border-style: solid;
+  width: 200px;
+}
+
 body {
   background-color:#000;
 }
