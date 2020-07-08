@@ -45,6 +45,14 @@ footer {
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
+  -webkit-box-shadow: inset 0px 0px 30px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 30px 8px rgba(65, 63, 63, 0.75);
+  box-shadow: inset 0px 0px 30px 8px rgba(0,0,0,0.75);
+
+}
+
+.contact > .container {
+  height: 90vh;
 }
 
 .resume, .portfolio, .footer {
