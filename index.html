@@ -7,6 +7,8 @@
   <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="./assets/images/favicon/manifest.json">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Cache-control" content="no-cache">
@@ -39,7 +41,7 @@
       <div class="row">
         <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 text-center">
           <div class="img py-3">
-            <img src="./assets/images/me2.jpeg" class="img-fluid rounded-circle resume-photo" alt="me">
+            <img src="./assets/images/mebw.jpeg" class="img-fluid rounded-circle resume-photo" alt="me">
           </div>
           <p class="lead mt-5 font-weight-bold">Hi! I'm Fábio. How can I help you today?</p>
           <p>
@@ -100,9 +102,6 @@
           <img src="./assets/images/logos/react.png" class="img-fluid">
         </div>
         <div class="col-6 col-md-3 col-lg-2 p-4">
-          <img src="./assets/images/logos/sqlite.png" class="img-fluid">
-        </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
           <img src="./assets/images/logos/vue.png" class="img-fluid">
         </div>
       </div>
@@ -118,18 +117,21 @@
           </p>
         </div>
       </div>
-      <div class="row d-flex justify-content-between align-items-center">
+      <div class="row d-flex justify-content-around align-items-center">
         <div class="col-12  col-lg-4 m-0 p-0">
           <img src="./assets/images/portfolio.png" class="img-fluid">
         </div>
         <div class="col-12  col-lg-4 m-0 p-0">
-          <img src="./assets/images/portfolio2.jpg" class="img-fluid">
+          <img src="./assets/images/portfolio.png" class="img-fluid">
         </div>
         <div class="col-12  col-lg-4 m-0 p-0">
           <img src="./assets/images/portfolio.png" class="img-fluid">
         </div>
         <div class="col-12  col-lg-4 m-0 p-0">
-          <img src="./assets/images/portfolio2.jpg" class="img-fluid">
+          <img src="./assets/images/portfolio.png" class="img-fluid">
+        </div>
+        <div class="col-12  col-lg-4 m-0 p-0">
+          <img src="./assets/images/portfolio.png" class="img-fluid">
         </div>
         <div class="col-12  col-lg-4 m-0 p-0">
           <img src="./assets/images/portfolio.png" class="img-fluid">
@@ -142,14 +144,26 @@
       <div class="row">
         <div class="col-xl-12 text-center">
           <h1 class="display-4 py-5">Contact</h1>
-          <p class="py-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nulla lacinia lectus id quam finibus efficitur. Morbi metus augue, 
-            feugiat sed tristique sed, blandit in mi. Vivamus tristique pharetra justo, 
-            ac blandit tortor aliquet eu. Nunc egestas, sem sit amet tincidunt ultricies, mauris dolor bibendum ligula, 
-            in pharetra justo lacus eu leo. Pellentesque eget ligula ut tellus eleifend efficitur. Duis sapien justo, 
-            elementum eu viverra eget, accumsan vel tellus.
-          </p>
+          <form id="myform">
+            <label>reply_to</label>
+            <input type="text" name="reply_to" />
+            <label>from_name</label>
+            <input type="text" name="from_name" />
+            <label>to_name</label>
+            <input type="text" name="to_name" />
+            <label>message_html</label>
+            <input type="text" name="message_html" />
+            <br><br>
+            <button>
+            Send
+            </button>
+            </form>            
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function(){
+                  emailjs.init("user_xaQdJNFbwpz9FbKuwV43T");
+                })();
+            </script>
         </div>
       </div>
     </div>
