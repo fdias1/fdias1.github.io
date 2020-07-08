@@ -71,37 +71,37 @@
         </div>
       </div>
       <div class="row d-flex rounded tools-box justify-content-around">
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/bootstrap.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/css3.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/docker.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/firebase.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/html.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/javascript.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/jquery.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/mysql.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/node.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/react.png" class="img-fluid">
         </div>
-        <div class="col-6 col-md-3 col-lg-2 p-4">
+        <div class="col-6 col-md-3 col-lg-2 p-4 m-auto">
           <img src="./assets/images/logos/vue.png" class="img-fluid">
         </div>
       </div>
@@ -144,26 +144,32 @@
       <div class="row">
         <div class="col-xl-12 text-center">
           <h1 class="display-4 py-5">Contact</h1>
-          <form id="myform">
-            <label>reply_to</label>
-            <input type="text" name="reply_to" />
-            <label>from_name</label>
-            <input type="text" name="from_name" />
-            <label>to_name</label>
-            <input type="text" name="to_name" />
-            <label>message_html</label>
-            <input type="text" name="message_html" />
-            <br><br>
-            <button>
-            Send
-            </button>
-            </form>            
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-            <script type="text/javascript">
-                (function(){
-                  emailjs.init("user_xaQdJNFbwpz9FbKuwV43T");
-                })();
-            </script>
+          <form id="myform" class="form text-left mb-5">
+            <div class="form-group col-md-8">
+              <label for="reply_to">E-Mail</label>
+              <input class="form-control form-control-lg" type="email" name="reply_to" id="reply_to" placeholder="E-mail"/>
+            </div>
+            <input type="hidden" name="to_name" value="Portfolio"/>
+            <div class="form-group col-md-8">
+              <label for="from_name">Name</label>
+              <input class="form-control form-control-lg" type="text" name="from_name" id="from_name" placeholder="Nome"/>
+            </div>
+            <div class="form-group col-xl-12">
+              <label for="message_html">Message</label>
+              <textarea class="form-control form-control-lg" name="message_html" id="message_html" rows="6"></textarea>
+            </div>
+
+            <div class="col-xl-12 text-center">
+              <button class="btn btn-secondary btn-lg">Send</button>
+            </div>
+
+          </form>            
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+          <script type="text/javascript">
+              (function(){
+                emailjs.init("user_xaQdJNFbwpz9FbKuwV43T");
+              })();
+          </script>
         </div>
       </div>
     </div>

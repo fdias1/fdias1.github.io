@@ -46,7 +46,7 @@ function getElementOpcacity(element) {
 }
 
 function fade(element) {
-  element.children().css("opacity",getElementOpcacity($(element)))
+  element.children().css('opacity',getElementOpcacity($(element)))
 }
 
 $(document).ready(function(){
@@ -58,29 +58,30 @@ $(document).ready(function(){
 })
 
 // serviço de email
-var myform = $("form#myform");
-
+var myform = $('form#myform')
 myform.submit(function(event){
-	event.preventDefault();
-
+	event.preventDefault()
 	var params = myform.serializeArray().reduce(function(obj, item) {
-     obj[item.name] = item.value;
-     return obj;
-  }, {});
+    obj[item.name] = item.value
+    return obj
+  }, {})
 
   // Change to your service ID, or keep using the default service
-  var service_id = "default_service";
+  var service_id = 'default_service'
+  var template_id = 'template_FC08fEDc'
 
-  var template_id = "template_FC08fEDc";
-  myform.find("button").text("Sending...");
-  emailjs.send(service_id, template_id, params)
-  	.then(function(){ 
-       alert("Sent!");
-       myform.find("button").text("Send");
-     }, function(err) {
-       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-       myform.find("button").text("Send");
-    });
-
-  return false;
-});
+  if (params['message_html'] && params['reply_to'] && params['from_name']) {
+    myform.find('button').text('Sending...')
+    emailjs.send(service_id, template_id, params)
+    .then(function(){ 
+        alert('Sua mensagem foi enviada, em breve retornarei o contato, obrigado!')
+        myform.find('button').text('Send')
+      }, function(err) {
+        alert('Something wrong happened, please try again later')
+        myform.find('button').text('Send')
+        $('message_html').text('')
+      }
+    )
+  }
+  return false
+})
