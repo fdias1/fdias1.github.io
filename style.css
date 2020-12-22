@@ -2,6 +2,7 @@
 
 *{
   color:#eee;
+  user-select: none;
 }
 
 textarea { 
@@ -54,4 +55,33 @@ footer {
 .resume, .portfolio, .footer {
   color:#ddd;
   background-color:#000;
+}
+
+.portfolio-card{
+  border-radius:8px;
+}
+.portfolio-card:hover {
+  background-color: #555;
+  transition:0.2s;
+}
+
+.portfolio-card a,.portfolio-card a:visited {
+  color:#eee;
+  text-decoration: none;
+}
+
+.download-icon {
+  height: 100px;
+  transition:0.2s;
+}
+
+.download-icon:hover {
+  filter:blur(2px);
+}
+
+.no-decoration-link,.no-decoration-link:visited,.no-decoration-link:hover{
+  color:#eee;
+}
+.download-icon:active {
+  opacity: 0.5;
 }
