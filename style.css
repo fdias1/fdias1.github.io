@@ -34,7 +34,7 @@ footer {
   height: 100vh;
 }
 
-.tools {
+.portfolio {
   background-image: url('./assets/images/bg5blur.png');
 }
 
@@ -42,7 +42,7 @@ footer {
   background-image: url('./assets/images/bg4blur.png');
 }
 
-.header,.tools,.contact {
+.header,.portfolio,.contact {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -52,7 +52,7 @@ footer {
   box-shadow: inset 0px 0px 30px 8px rgba(0,0,0,0.75);
 }
 
-.resume, .portfolio, .footer {
+.resume, .tools, .footer {
   color:#ddd;
   background-color:#000;
 }
